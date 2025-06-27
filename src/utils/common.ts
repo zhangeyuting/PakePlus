@@ -39,6 +39,7 @@ export const urlMap = {
     pakeplus: 'https://www.pakeplus.com/',
     github: 'https://github.com/Sjj1024/PakePlus',
     ppofficial: 'https://ppofficial.pages.dev/',
+    ppnotes: 'https://pakeplus.com/ppnotes.json',
     configdoc: 'https://ppofficial.pages.dev/guide/config.html',
     phonedoc: 'https://www.pakeplus.com/guide/phone.html',
     builddoc: 'https://www.pakeplus.com/guide/build.html',
@@ -1207,7 +1208,7 @@ export const checkLastPublish = () => {
 }
 
 // check update
-export const isNow = (v1: string, v2: string) => {
+export const isNew = (v1: string, v2: string) => {
     const parts1 = v1.split('.').map(Number)
     const parts2 = v2.split('.').map(Number)
     const maxLength = Math.max(parts1.length, parts2.length)
